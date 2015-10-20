@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Hamzah's Animal Duels!!</title>
+        <meta name="The Big Animal Game" content="Building out my own game!">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h2> Animal Duels! Lions vs Penguins: This is a two player game!</h2> </p>
+        <input type="button" value="Current Score" onclick="checkScore();">
+        <input type="button" value="Instructions" onclick="instructions();">
+        <input type="button" value="Crazy Board" onclick="wackyBoard();">
+        <input type="button" value="Reset Game!" onClick="history.go(0)">
+        <br><br>
+        <div class="gameBoard"></div>
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="helperFunctions.js"></script>
+    <script type="text/javascript" src="boardSetup.js"></script>
+    <script type="text/javascript" src="gamePieces.js"></script>
+    <script type="text/javascript" src="gamePlay.js"></script>
+
+    <script> 
+
+        $(document).ready(function() {
+          renderGameBoard(gameBoard); 
+        });
+
+    </script>
+</html>
